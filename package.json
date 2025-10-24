@@ -1,0 +1,201 @@
+{
+  "workspaces": [
+    "packages/@*/*",
+    "packages/[!@]*"
+  ],
+  "name": "@jcbhmr/node",
+  "version": "25.0.0",
+  "type": "module",
+  "description": "📦 Node.js released as an npm package",
+  "exports": {
+    "./assert": {
+      "node": "./assert.js"
+    },
+    "./assert/strict": {
+      "node": "./assert/strict.js"
+    },
+    "./async_hooks": {
+      "node": "./async_hooks.js"
+    },
+    "./buffer": {
+      "node": "./buffer.js"
+    },
+    "./child_process": {
+      "node": "./child_process.js"
+    },
+    "./cluster": {
+      "node": "./cluster.js"
+    },
+    "./console": {
+      "node": "./console.js"
+    },
+    "./constants": {
+      "node": "./constants.js"
+    },
+    "./crypto": {
+      "node": "./crypto.js"
+    },
+    "./dgram": {
+      "node": "./dgram.js"
+    },
+    "./diagnostics_channel": {
+      "node": "./diagnostics_channel.js"
+    },
+    "./dns": {
+      "node": "./dns.js"
+    },
+    "./dns/promises": {
+      "node": "./dns/promises.js"
+    },
+    "./domain": {
+      "node": "./domain.js"
+    },
+    "./events": {
+      "node": "./events.js"
+    },
+    "./fs": {
+      "node": "./fs.js"
+    },
+    "./fs/promises": {
+      "node": "./fs/promises.js"
+    },
+    "./http": {
+      "node": "./http.js"
+    },
+    "./http2": {
+      "node": "./http2.js"
+    },
+    "./https": {
+      "node": "./https.js"
+    },
+    "./inspector": {
+      "node": "./inspector.js"
+    },
+    "./inspector/promises": {
+      "node": "./inspector/promises.js"
+    },
+    "./module": {
+      "node": "./module.js"
+    },
+    "./net": {
+      "node": "./net.js"
+    },
+    "./os": {
+      "node": "./os.js"
+    },
+    "./path": {
+      "node": "./path.js"
+    },
+    "./path/posix": {
+      "node": "./path/posix.js"
+    },
+    "./path/win32": {
+      "node": "./path/win32.js"
+    },
+    "./perf_hooks": {
+      "node": "./perf_hooks.js"
+    },
+    "./process": {
+      "node": "./process.js"
+    },
+    "./querystring": {
+      "node": "./querystring.js"
+    },
+    "./quic": {
+      "node": "./quic.js"
+    },
+    "./readline": {
+      "node": "./readline.js"
+    },
+    "./readline/promises": {
+      "node": "./readline/promises.js"
+    },
+    "./repl": {
+      "node": "./repl.js"
+    },
+    "./sea": {
+      "node": "./sea.js"
+    },
+    "./sqlite": {
+      "node": "./sqlite.js"
+    },
+    "./stream": {
+      "node": "./stream.js"
+    },
+    "./stream/consumers": {
+      "node": "./stream/consumers.js"
+    },
+    "./stream/promises": {
+      "node": "./stream/promises.js"
+    },
+    "./stream/web": {
+      "node": "./stream/web.js"
+    },
+    "./string_decoder": {
+      "node": "./string_decoder.js"
+    },
+    "./test": {
+      "node": "./test.js"
+    },
+    "./test/reporters": {
+      "node": "./test/reporters.js"
+    },
+    "./timers": {
+      "node": "./timers.js"
+    },
+    "./timers/promises": {
+      "node": "./timers/promises.js"
+    },
+    "./tls": {
+      "node": "./tls.js"
+    },
+    "./trace_events": {
+      "node": "./trace_events.js"
+    },
+    "./tty": {
+      "node": "./tty.js"
+    },
+    "./url": {
+      "node": "./url.js"
+    },
+    "./util": {
+      "node": "./util.js"
+    },
+    "./util/types": {
+      "node": "./util/types.js"
+    },
+    "./v8": {
+      "node": "./v8.js"
+    },
+    "./vm": {
+      "node": "./vm.js"
+    },
+    "./wasi": {
+      "node": "./wasi.js"
+    },
+    "./worker_threads": {
+      "node": "./worker_threads.js"
+    },
+    "./zlib": {
+      "node": "./zlib.js"
+    }
+  },
+  "bin": {
+    "node": "node.exe"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@types/semver": "^7.7.1",
+    "execa": "^9.6.0",
+    "jszip": "^3.10.1",
+    "semver": "^7.7.3",
+    "tar": "^7.5.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "nano-spawn": "^2.0.0"
+  },
+  "scripts": {
+    "build": "node ./build.ts"
+  }
+}
