@@ -4,184 +4,70 @@
     "packages/[!@]*"
   ],
   "name": "@jcbhmr/node",
-  "version": "25.0.0",
+  "version": "25.0.0-rc1+25.0.0",
   "type": "module",
   "description": "📦 Node.js released as an npm package",
   "exports": {
-    "./assert": {
-      "node": "./assert.js"
-    },
-    "./assert/strict": {
-      "node": "./assert/strict.js"
-    },
-    "./async_hooks": {
-      "node": "./async_hooks.js"
-    },
-    "./buffer": {
-      "node": "./buffer.js"
-    },
-    "./child_process": {
-      "node": "./child_process.js"
-    },
-    "./cluster": {
-      "node": "./cluster.js"
-    },
-    "./console": {
-      "node": "./console.js"
-    },
-    "./constants": {
-      "node": "./constants.js"
-    },
-    "./crypto": {
-      "node": "./crypto.js"
-    },
-    "./dgram": {
-      "node": "./dgram.js"
-    },
-    "./diagnostics_channel": {
-      "node": "./diagnostics_channel.js"
-    },
-    "./dns": {
-      "node": "./dns.js"
-    },
-    "./dns/promises": {
-      "node": "./dns/promises.js"
-    },
-    "./domain": {
-      "node": "./domain.js"
-    },
-    "./events": {
-      "node": "./events.js"
-    },
-    "./fs": {
-      "node": "./fs.js"
-    },
-    "./fs/promises": {
-      "node": "./fs/promises.js"
-    },
-    "./http": {
-      "node": "./http.js"
-    },
-    "./http2": {
-      "node": "./http2.js"
-    },
-    "./https": {
-      "node": "./https.js"
-    },
-    "./inspector": {
-      "node": "./inspector.js"
-    },
-    "./inspector/promises": {
-      "node": "./inspector/promises.js"
-    },
-    "./module": {
-      "node": "./module.js"
-    },
-    "./net": {
-      "node": "./net.js"
-    },
-    "./os": {
-      "node": "./os.js"
-    },
-    "./path": {
-      "node": "./path.js"
-    },
-    "./path/posix": {
-      "node": "./path/posix.js"
-    },
-    "./path/win32": {
-      "node": "./path/win32.js"
-    },
-    "./perf_hooks": {
-      "node": "./perf_hooks.js"
-    },
-    "./process": {
-      "node": "./process.js"
-    },
-    "./querystring": {
-      "node": "./querystring.js"
-    },
-    "./quic": {
-      "node": "./quic.js"
-    },
-    "./readline": {
-      "node": "./readline.js"
-    },
-    "./readline/promises": {
-      "node": "./readline/promises.js"
-    },
-    "./repl": {
-      "node": "./repl.js"
-    },
-    "./sea": {
-      "node": "./sea.js"
-    },
-    "./sqlite": {
-      "node": "./sqlite.js"
-    },
-    "./stream": {
-      "node": "./stream.js"
-    },
-    "./stream/consumers": {
-      "node": "./stream/consumers.js"
-    },
-    "./stream/promises": {
-      "node": "./stream/promises.js"
-    },
-    "./stream/web": {
-      "node": "./stream/web.js"
-    },
-    "./string_decoder": {
-      "node": "./string_decoder.js"
-    },
-    "./test": {
-      "node": "./test.js"
-    },
-    "./test/reporters": {
-      "node": "./test/reporters.js"
-    },
-    "./timers": {
-      "node": "./timers.js"
-    },
-    "./timers/promises": {
-      "node": "./timers/promises.js"
-    },
-    "./tls": {
-      "node": "./tls.js"
-    },
-    "./trace_events": {
-      "node": "./trace_events.js"
-    },
-    "./tty": {
-      "node": "./tty.js"
-    },
-    "./url": {
-      "node": "./url.js"
-    },
-    "./util": {
-      "node": "./util.js"
-    },
-    "./util/types": {
-      "node": "./util/types.js"
-    },
-    "./v8": {
-      "node": "./v8.js"
-    },
-    "./vm": {
-      "node": "./vm.js"
-    },
-    "./wasi": {
-      "node": "./wasi.js"
-    },
-    "./worker_threads": {
-      "node": "./worker_threads.js"
-    },
-    "./zlib": {
-      "node": "./zlib.js"
-    }
+    "./assert": null,
+    "./assert/strict": null,
+    "./async_hooks": null,
+    "./buffer": null,
+    "./child_process": null,
+    "./cluster": null,
+    "./console": null,
+    "./constants": null,
+    "./crypto": null,
+    "./dgram": null,
+    "./diagnostics_channel": null,
+    "./dns": null,
+    "./dns/promises": null,
+    "./domain": null,
+    "./events": null,
+    "./fs": null,
+    "./fs/promises": null,
+    "./http": null,
+    "./http2": null,
+    "./https": null,
+    "./inspector": null,
+    "./inspector/promises": null,
+    "./module": null,
+    "./net": null,
+    "./os": null,
+    "./path": null,
+    "./path/posix": null,
+    "./path/win32": null,
+    "./perf_hooks": null,
+    "./process": null,
+    "./querystring": null,
+    "./quic": null,
+    "./readline": null,
+    "./readline/promises": null,
+    "./repl": null,
+    "./sea": "./dist/sea.js",
+    "./sqlite": null,
+    "./stream": null,
+    "./stream/consumers": null,
+    "./stream/promises": null,
+    "./stream/web": null,
+    "./string_decoder": null,
+    "./test": null,
+    "./test/reporters": null,
+    "./timers": null,
+    "./timers/promises": null,
+    "./tls": null,
+    "./trace_events": null,
+    "./tty": null,
+    "./url": null,
+    "./util": null,
+    "./util/types": null,
+    "./v8": null,
+    "./vm": null,
+    "./wasi": null,
+    "./worker_threads": null,
+    "./zlib": null
   },
   "bin": {
-    "node": "node.exe"
+    "node": "dist/node.exe"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
@@ -190,12 +76,35 @@
     "jszip": "^3.10.1",
     "semver": "^7.7.3",
     "tar": "^7.5.1",
+    "tsdown": "^0.15.9",
     "typescript": "^5.9.3"
   },
-  "dependencies": {
-    "nano-spawn": "^2.0.0"
+  "optionalDependencies": {
+    "@jcbhmr/node-darwin-arm64": "25.0.0-rc1",
+    "@jcbhmr/node-darwin-x64": "25.0.0-rc1",
+    "@jcbhmr/node-linux-arm64-glibc": "25.0.0-rc1",
+    "@jcbhmr/node-linux-arm64-musl": "25.0.0-rc1",
+    "@jcbhmr/node-linux-x64-glibc": "25.0.0-rc1",
+    "@jcbhmr/node-linux-x64-musl": "25.0.0-rc1",
+    "@jcbhmr/node-win32-arm64": "25.0.0-rc1",
+    "@jcbhmr/node-win32-x64": "25.0.0-rc1"
   },
   "scripts": {
-    "build": "node ./build.ts"
+    "check": "tsc",
+    "prepare": "npm run build",
+    "build": "tsdown"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=11"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^25"
+    }
+  },
+  "engines": {
+    "node": "^25 ||^24 || ^22 || ^20"
   }
 }

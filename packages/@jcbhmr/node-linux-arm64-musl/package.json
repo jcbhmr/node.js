@@ -1,0 +1,28 @@
+{
+    "type": "module",
+    "name": "@jcbhmr/node-linux-arm64-musl",
+    "version": "25.0.0-rc1+25.0.0",
+    "description": "TODO: Add description",
+    "exports": {
+        "./node": "./dist/node"
+    },
+    "os": [
+        "linux"
+    ],
+    "cpu": [
+        "arm64"
+    ],
+    "libc": [
+        "musl"
+    ],
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "node ./build.ts"
+    },
+    "devDependencies": {
+        "execa": "^9.6.0",
+        "semver": "^7.7.3"
+    }
+}

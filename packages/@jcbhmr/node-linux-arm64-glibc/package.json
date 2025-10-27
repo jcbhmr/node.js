@@ -1,0 +1,5 @@
+{
+    "type": "module",
+    "name": "@jcbhmr/node-linux-arm64-glibc",
+    "version": "0.25.0-rc1"
+}
