@@ -4,7 +4,7 @@
     "packages/[!@]*"
   ],
   "name": "@jcbhmr/node",
-  "version": "25.0.0-rc1+25.0.0",
+  "version": "25.0.0-rc.1+25.0.0",
   "type": "module",
   "description": "📦 Node.js released as an npm package",
   "exports": {
@@ -67,37 +67,35 @@
     "./zlib": null
   },
   "bin": {
-    "node": "dist/node.exe"
+    "node": "dist/main.exe"
   },
+  "files": ["dist/"],
   "devDependencies": {
     "@types/node": "^24.9.1",
     "@types/semver": "^7.7.1",
     "execa": "^9.6.0",
-    "jszip": "^3.10.1",
     "semver": "^7.7.3",
-    "tar": "^7.5.1",
     "tsdown": "^0.15.9",
     "typescript": "^5.9.3"
   },
   "optionalDependencies": {
-    "@jcbhmr/node-darwin-arm64": "25.0.0-rc1",
-    "@jcbhmr/node-darwin-x64": "25.0.0-rc1",
-    "@jcbhmr/node-linux-arm64-glibc": "25.0.0-rc1",
-    "@jcbhmr/node-linux-arm64-musl": "25.0.0-rc1",
-    "@jcbhmr/node-linux-x64-glibc": "25.0.0-rc1",
-    "@jcbhmr/node-linux-x64-musl": "25.0.0-rc1",
-    "@jcbhmr/node-win32-arm64": "25.0.0-rc1",
-    "@jcbhmr/node-win32-x64": "25.0.0-rc1"
+    "@jcbhmr/node-darwin-arm64": "25.0.0-rc.1",
+    "@jcbhmr/node-darwin-x64": "25.0.0-rc.1",
+    "@jcbhmr/node-linux-arm64-glibc": "25.0.0-rc.1",
+    "@jcbhmr/node-linux-arm64-musl": "25.0.0-rc.1",
+    "@jcbhmr/node-linux-x64-glibc": "25.0.0-rc.1",
+    "@jcbhmr/node-linux-x64-musl": "25.0.0-rc.1",
+    "@jcbhmr/node-win32-arm64": "25.0.0-rc.1",
+    "@jcbhmr/node-win32-x64": "25.0.0-rc.1"
   },
   "scripts": {
     "check": "tsc",
-    "prepare": "npm run build",
     "build": "tsdown"
   },
   "devEngines": {
     "packageManager": {
       "name": "npm",
-      "version": ">=11"
+      "version": "^11"
     },
     "runtime": {
       "name": "node",
@@ -105,6 +103,9 @@
     }
   },
   "engines": {
-    "node": "^25 ||^24 || ^22 || ^20"
+    "node": "^25 || ^24 || ^22 || ^20"
+  },
+  "dependencies": {
+    "detect-libc": "^2.1.2"
   }
 }
